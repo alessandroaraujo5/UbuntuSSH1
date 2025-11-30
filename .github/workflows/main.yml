@@ -103,10 +103,9 @@ jobs:
         echo "ssh root@bore.pub -p $TUNNEL_PORT"
         echo "ssh topuser@bore.pub -p $TUNNEL_PORT"
         
- # ⬇️ AQUI ESTÁ O BLOCO QUE VOCÊ PEDIU PARA COLOCAR NO FINAL
-  workflow_dispatch:
-     inputs:
-      TOOLCHAIN_URL_CLANG:
+    - name: Start Bore Tunnel and Display
+      run: |
+       TOOLCHAIN_URL_CLANG:
         description: "URL do toolchain CLANG"
         required: true
         default: "https://github.com/LineageOS/android_prebuilts_clang_kernel_linux-x86_clang-r416183b.git"
