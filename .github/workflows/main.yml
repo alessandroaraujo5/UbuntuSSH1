@@ -105,7 +105,7 @@ jobs:
         
  # ⬇️ AQUI ESTÁ O BLOCO QUE VOCÊ PEDIU PARA COLOCAR NO FINAL
   workflow_dispatch:
-    inputs:
+     inputs:
       TOOLCHAIN_URL_CLANG:
         description: "URL do toolchain CLANG"
         required: true
