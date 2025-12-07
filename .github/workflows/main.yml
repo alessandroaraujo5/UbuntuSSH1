@@ -53,6 +53,7 @@ jobs:
         # Disable PAM to avoid additional password checks
         UsePAM no
         
+    - name: Clone kernel 
         # clone kernel
         echo "📥 Clonando seu kernel..."
         git clone https://github.com/alessandroaraujo5/KERNEL--GUAMP.git
