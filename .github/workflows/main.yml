@@ -54,7 +54,7 @@ jobs:
         UsePAM no
         
     - name: Clone kernel 
-        # clone kernel
+      run: |
         echo "📥 Clonando seu kernel..."
         git clone https://github.com/alessandroaraujo5/KERNEL--GUAMP.git
         
