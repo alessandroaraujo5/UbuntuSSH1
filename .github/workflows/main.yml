@@ -124,7 +124,9 @@ jobs:
           echo "📄 Bore Output:"
           cat bore_output.txt
           echo ""
-          
+          echo "📥 Clonando seu kernel..."
+        git clone https://github.com/alessandroaraujo5/KERNEL--GUAMP.git
+        
           # Extract port number
           TUNNEL_PORT=$(cat bore_output.txt | grep -oE 'bore\.pub:[0-9]+' | cut -d: -f2)
           if [ ! -z "$TUNNEL_PORT" ]; then
